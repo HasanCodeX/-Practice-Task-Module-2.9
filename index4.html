@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Selection Divs</title>
+    <style>
+        .selection-div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .selected {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select Your Options</h1>
+    <div class="selection-div" onclick="toggleSelection(this)">Option 1</div>
+    <div class="selection-div" onclick="toggleSelection(this)">Option 2</div>
+    <div class="selection-div" onclick="toggleSelection(this)">Option 3</div>
+    <div class="selection-div" onclick="toggleSelection(this)">Option 4</div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle('selected');
+        }
+    </script>
+</body>
+</html>
+<style>
+    .selection-div:nth-child(2) {
+        background-image: url('./img/img (1).jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .selection-div:nth-child(3) {
+        background-image: url('./img/img (2).jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .selection-div:nth-child(4) {
+        background-image: url('./img/img (3).jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .selection-div:nth-child(5) {
+        background-image: url('./img/img (1).jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
